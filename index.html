@@ -84,30 +84,30 @@ const notes=document.getElementById('notesBox');try{notes.value=localStorage.get
 // Example: "album01": "https://photos.app.goo.gl/your-real-shared-album-link"
 // Leave the entry blank until you have created and shared that album.
 const photoAlbumLinks = {
-  "album01": "", // Singapore
-  "album02": "", // Puerto Princesa, Philippines
-  "album03": "", // Bitung, Indonesia
-  "album04": "", // Jayapura, Indonesia
-  "album05": "", // Rabaul, Papua New Guinea
-  "album06": "", // Kiriwina Island, PNG
-  "album07": "", // Townsville, Australia
-  "album08": "", // Cairns, Australia
-  "album09": "", // Great Barrier Reef & Torres Strait
-  "album10": "", // Darwin, Australia
-  "album11": "", // Batu Tara, Indonesia
-  "album12": "", // Komodo / Slawi Bay, Indonesia
-  "album13": "", // Bali (Benoa), Indonesia
-  "album14": "", // Krakatoa Volcano, Indonesia
-  "album15": "", // Koh Samui, Thailand
-  "album16": "", // Pattaya / Bangkok, Thailand
-  "album17": "", // Sihanoukville, Cambodia
-  "album18": "", // Phu My / Ho Chi Minh City, Vietnam
-  "album19": "", // Da Nang / Hoi An, Vietnam
-  "album20": "", // Ha Long Bay / Hanoi, Vietnam
-  "album21": "", // Hong Kong
-  "album22": "", // Life Aboard the Westerdam
+  "album01": "https://photos.app.goo.gl/oXFcEEs4QSML3Q8d8", // Singapore
+  "album02": "https://photos.app.goo.gl/p69PGmnYcDjuJzsMA", // Puerto Princesa, Philippines
+  "album03": "https://photos.app.goo.gl/YnFSCFKJMuinEp5w6", // Bitung, Indonesia
+  "album04": "https://photos.app.goo.gl/hsfa4hq3G45UJeMG8", // Jayapura, Indonesia
+  "album05": "https://photos.app.goo.gl/unwuoV44Z3rUNJmV7", // Rabaul, Papua New Guinea
+  "album06": "https://photos.app.goo.gl/KRQYUX8mbXjjMD1G6", // Kiriwina Island, PNG
+  "album07": "https://photos.app.goo.gl/VPQJuuEjerEkK1r7A", // Townsville, Australia
+  "album08": "https://photos.app.goo.gl/7JjrrLHnX9gCKPcS6", // Cairns, Australia
+  "album09": "https://photos.app.goo.gl/cM9b4kRMti5AGAus8", // Great Barrier Reef & Torres Strait
+  "album10": "https://photos.app.goo.gl/y9FyGDKkLjJJDffn6", // Darwin, Australia
+  "album11": "https://photos.app.goo.gl/rxkzFvUK9QViWxpU9", // Batu Tara, Indonesia
+  "album12": "https://photos.app.goo.gl/iVwJySQVxRKB8mCAA", // Komodo / Slawi Bay, Indonesia
+  "album13": "https://photos.app.goo.gl/HjrfyNyyqouDB2BE6", // Bali (Benoa), Indonesia
+  "album14": "https://photos.app.goo.gl/NM4zaYAS238eVfH29", // Krakatoa Volcano, Indonesia
+  "album15": "https://photos.app.goo.gl/QCVPxAsHMN2weZ9w6", // Koh Samui, Thailand
+  "album16": "https://photos.app.goo.gl/zX3QHQhGnJcK3H4DA", // Pattaya / Bangkok, Thailand
+  "album17": "https://photos.app.goo.gl/jBT2Ph9mAoDkSs1eA", // Sihanoukville, Cambodia
+  "album18": "https://photos.app.goo.gl/prjHRboxKgLXGfWZ9", // Phu My / Ho Chi Minh City, Vietnam
+  "album19": "https://photos.app.goo.gl/g8Vtqq4ErumVbVSU8", // Da Nang / Hoi An, Vietnam
+  "album20": "https://photos.app.goo.gl/LeMKt1QUWRf53ECC6", // Ha Long Bay / Hanoi, Vietnam
+  "album21": "https://photos.app.goo.gl/zubgMb8b92M8WvM17", // Hong Kong
+  "album22": "https://photos.app.goo.gl/gqkLHBYEf8P1t3hg7", // Life Aboard the Westerdam
 };
-const photoAlbumDetails = [{"id":"album01","name":"Singapore","date":"Dec 2026 & Jan 3, Jan 31","symbol":"🌆"},{"id":"album02","name":"Puerto Princesa, Philippines","date":"Jan 6","symbol":"🌴"},{"id":"album03","name":"Bitung, Indonesia","date":"Jan 8","symbol":"🌿"},{"id":"album04","name":"Jayapura, Indonesia","date":"Jan 11","symbol":"🏝️"},{"id":"album05","name":"Rabaul, Papua New Guinea","date":"Jan 13","symbol":"🌋"},{"id":"album06","name":"Kiriwina Island, PNG","date":"Jan 14","symbol":"🏖️"},{"id":"album07","name":"Townsville, Australia","date":"Jan 16","symbol":"☀️"},{"id":"album08","name":"Cairns, Australia","date":"Jan 17–18","symbol":"🐠"},{"id":"album09","name":"Great Barrier Reef & Torres Strait","date":"Jan 19–20","symbol":"🪸"},{"id":"album10","name":"Darwin, Australia","date":"Jan 22","symbol":"🌅"},{"id":"album11","name":"Batu Tara, Indonesia","date":"Jan 24","symbol":"🌋"},{"id":"album12","name":"Komodo / Slawi Bay, Indonesia","date":"Jan 25","symbol":"🦎"},{"id":"album13","name":"Bali (Benoa), Indonesia","date":"Jan 26–27","symbol":"🌺"},{"id":"album14","name":"Krakatoa Volcano, Indonesia","date":"Jan 29","symbol":"🌋"},{"id":"album15","name":"Koh Samui, Thailand","date":"Feb 2","symbol":"🌴"},{"id":"album16","name":"Pattaya / Bangkok, Thailand","date":"Feb 3–4","symbol":"🛕"},{"id":"album17","name":"Sihanoukville, Cambodia","date":"Feb 5","symbol":"🌊"},{"id":"album18","name":"Phu My / Ho Chi Minh City, Vietnam","date":"Feb 7","symbol":"🏙️"},{"id":"album19","name":"Da Nang / Hoi An, Vietnam","date":"Feb 9","symbol":"🏮"},{"id":"album20","name":"Ha Long Bay / Hanoi, Vietnam","date":"Feb 11–12","symbol":"⛵"},{"id":"album21","name":"Hong Kong","date":"Feb 14 & after cruise","symbol":"🌃"},{"id":"album22","name":"Life Aboard the Westerdam","date":"Sea days & shipboard moments","symbol":"🚢"}];
+const photoAlbumDetails = [{"id":"album01","name":"Singapore","date":"Dec 2026 & Jan 3, Jan 31","symbol":"🌆"},{"id":"album02","name":"Puerto Princesa, Philippines","date":"Jan 6","symbol":"🌴"},{"id":"album03","name":"Bitung, Indonesia","date":"Jan 8","symbol":"🌿"},{"id":"album04","name":"Jayapura, Indonesia","date":"Jan 11","symbol":"🏝️"},{"id":"album05","name":"Rabaul, Papua New Guinea","date":"Jan 13","symbol":"🌋"},{"id":"album06","name":"Kiriwina Island, PNG","date":"Jan 14","symbol":"🏖️"},{"id":"album07","name":"Townsville, Australia","date":"Jan 16","symbol":"☀️"},{"id":"album08","name":"Cairns, Australia","date":"Jan 17–18","symbol":"🐠"},{"id":"album09","name":"Great Barrier Reef & Torres Strait","date":"Jan 20","symbol":"🪸"},{"id":"album10","name":"Darwin, Australia","date":"Jan 22","symbol":"🌅"},{"id":"album11","name":"Batu Tara, Indonesia","date":"Jan 24","symbol":"🌋"},{"id":"album12","name":"Komodo / Slawi Bay, Indonesia","date":"Jan 25","symbol":"🦎"},{"id":"album13","name":"Bali (Benoa), Indonesia","date":"Jan 26–27","symbol":"🌺"},{"id":"album14","name":"Krakatoa Volcano, Indonesia","date":"Jan 29","symbol":"🌋"},{"id":"album15","name":"Koh Samui, Thailand","date":"Feb 2","symbol":"🌴"},{"id":"album16","name":"Pattaya / Bangkok, Thailand","date":"Feb 3–4","symbol":"🛕"},{"id":"album17","name":"Sihanoukville, Cambodia","date":"Feb 5","symbol":"🌊"},{"id":"album18","name":"Phu My / Ho Chi Minh City, Vietnam","date":"Feb 7–8","symbol":"🏙️"},{"id":"album19","name":"Da Nang / Hoi An, Vietnam","date":"Feb 9","symbol":"🏮"},{"id":"album20","name":"Ha Long Bay / Hanoi, Vietnam","date":"Feb 11–12","symbol":"⛵"},{"id":"album21","name":"Hong Kong","date":"Feb 14 & after cruise","symbol":"🌃"},{"id":"album22","name":"Life Aboard the Westerdam","date":"Sea days & shipboard moments","symbol":"🚢"}];
 const photoAlbumGrid=document.getElementById('photoAlbumGrid');
 photoAlbumDetails.forEach(album=>{
   const card=document.createElement('article');card.className='gallery-card';
